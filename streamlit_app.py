@@ -9,8 +9,8 @@ with st.expander('Data'):
   df=pd.read_csv('https://raw.githubusercontent.com/AK-627/ahmedak-ai/33af28282fed9d82d5a8b634e864f5786c67c161/tiger_cleaned.csv')
   df
   st.write('**X**')
-  X=df.drop('Common_Name',axis=1)
+  X=df.drop('Common Name',axis=1)
   X
   st.write('**y**')
-  y=df.Common_Name
+  y=df.('Common Name')
   y
