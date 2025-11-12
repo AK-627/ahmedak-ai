@@ -41,4 +41,4 @@ with st.sidebar:
 # CONCAT with X (columns match) and display
 input_tiger = pd.concat([input_df, X], axis=0, ignore_index=True)
 st.write("## Input + Dataset (preview)")
-st.write(input_tiger.head())
+
