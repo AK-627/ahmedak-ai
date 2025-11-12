@@ -16,3 +16,6 @@ with st.expander('Data'):
   y
 with st.expander('Data Visualization'):
   st.scatter_chart(data=df,x='Length',y='Weight',color='Common_Name')
+#Data Preparations
+with st.sidebar:
+  st.header('Input Features')
