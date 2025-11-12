@@ -20,8 +20,9 @@ with st.expander('Data Visualization'):
 with st.sidebar:
   st.header('Input Features')
   #Common Name,Scientific Name,Continent,Sex,Length,Weight
-  Common_Name=st.selectbox('Common_Name',('Bengal Tiger','Siberian Tiger',Indochinese','Malayan Tiger'))
+  Common_Name=st.selectbox('Common_Name',('Bengal Tiger','Siberian Tiger','Indochinese','Malayan Tiger'))
   Scientific_Name=st.selectbox('Scientific_Name',('Panthera tigris tigris','Panthera tigris altaica','Panthera tigris corbetti','Panthera tigris jacksoni','Panthera tigris amoyensis'))
+  Continent=st.selectbox('Continent',('Asia'))
   Sex=st.selectbox('Sex',('Male','Female'))
   Length=st.slider('Length(m)',2.0,3.5,(2.1,3.1))
   Weight=st.slider('Weight(kg)',80,300,(100,200))
