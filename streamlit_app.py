@@ -22,5 +22,5 @@ with st.sidebar:
   #Common Name,Scientific Name,Continent,Sex,Length,Weight
   ScientificName=st.selectbox('Scientific_Name',('Panthera tigris tigris','Panthera tigris altaica','Panthera tigris corbetti','Panthera tigris jacksoni','Panthera tigris amoyensis'))
   Gender=st.selectbox('Sex',('Male','Female'))
-  length=st.slider('Length',min_value=2.1,max_value=3.3)
+  length=st.slider('Length',min_value=2.0,max_value=3.5,(2.1,3.1))
   
