@@ -20,8 +20,18 @@ with st.expander('Data Visualization'):
 with st.sidebar:
   st.header('Input Features')
   #Common Name,Scientific Name,Continent,Sex,Length,Weight
-  ScientificName=st.selectbox('Scientific_Name',('Panthera tigris tigris','Panthera tigris altaica','Panthera tigris corbetti','Panthera tigris jacksoni','Panthera tigris amoyensis'))
-  Gender=st.selectbox('Sex',('Male','Female'))
-  length=st.slider('Length(m)',2.0,3.5,(2.1,3.1))
-  weight=st.slider('Weight(kg)',80,300,(100,200))
+  Scientific_Name=st.selectbox('Scientific_Name',('Panthera tigris tigris','Panthera tigris altaica','Panthera tigris corbetti','Panthera tigris jacksoni','Panthera tigris amoyensis'))
+  Sex=st.selectbox('Sex',('Male','Female'))
+  Length=st.slider('Length(m)',2.0,3.5,(2.1,3.1))
+  Weight=st.slider('Weight(kg)',80,300,(100,200))
+
+  #CEATING A DATAFRAME
+  data={'Scientific_Name',Scientific_Name,
+        'Sex':Sex,
+        'Length':Length,
+        'Weight':Weight}
+  input_df=pd.DataFrame(data,index=[0])
+  input_tiger=pd.concat([input_df,X],axis=0)
+
+  
   
