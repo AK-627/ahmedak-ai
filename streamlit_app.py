@@ -30,7 +30,7 @@ with st.sidebar:
   #CEATING A DATAFRAME
   data={'Common_Name':Common_Name,
         'Scientific_Name':Scientific_Name,
-        'Continent'=Continent,
+        'Continent':Continent,
         'Sex':Sex,
         'Length':Length,
         'Weight':Weight}
