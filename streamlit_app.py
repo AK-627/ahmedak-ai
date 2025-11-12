@@ -12,5 +12,5 @@ with st.expander('Data'):
   X=df.drop('Common_Name',axis=1)
   X
   st.write('**y**')
-  y=df.('Common_Name')
+  y=df.Common_Name
   y
