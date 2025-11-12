@@ -14,3 +14,5 @@ with st.expander('Data'):
   st.write('**y**')
   y=df.Common_Name
   y
+with st.expander('Data Visualization'):
+  st.scatter_chart(data=df,x='Length',y='Weight',color='Common_Name')
