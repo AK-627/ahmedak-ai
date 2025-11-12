@@ -21,4 +21,4 @@ with st.sidebar:
   st.header('Input Features')
   #Common Name,Scientific Name,Continent,Sex,Length,Weight
   ScientificName=st.selectbox('Scientific_Name',('Panthera tigris tigris','Panthera tigris altaica','Panthera tigris corbetti','Panthera tigris jacksoni','Panthera tigris amoyensis'))
-  Gender=st.selectbox('Sex',('Male','Female')
+  Gender=st.selectbox('Sex',('Male','Female'))
