@@ -28,7 +28,9 @@ with st.sidebar:
   Weight=st.slider('Weight(kg)',80,300,(100,200))
 
   #CEATING A DATAFRAME
-  data={'Scientific_Name':Scientific_Name,
+  data={'Common_Name':Common_Name,
+        'Scientific_Name':Scientific_Name,
+        'Continent'=Continent,
         'Sex':Sex,
         'Length':Length,
         'Weight':Weight}
