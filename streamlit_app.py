@@ -9,7 +9,7 @@ with st.expander('Data'):
   df=pd.read_csv('https://raw.githubusercontent.com/AK-627/ahmedak-ai/refs/heads/master/tiger_cleaned.csv')
   df
   st.write('**X**')
-  X=df.drop('Common_Name',axis=1)
+  X = df.drop('Common_Name',axis=1)
   X
   st.write('**y**')
   y=df.Common_Name
@@ -31,7 +31,8 @@ with st.sidebar:
         'Length':Length,
         'Weight':Weight}
   input_df=pd.DataFrame(data,index=[0])
-  input_tiger=pd.concat([input_df,X],axis=0)
+  input_tiger=pd.concat([input_df, X],axis=0)
+input_tiger
 
   
   
